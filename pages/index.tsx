@@ -7,7 +7,7 @@ const Home: NextPage = () => {
     <Layout>
       <header className="h-screen flex items-center justify-center">
         <div>
-          <h1 className="text-center">Maddie & Robbie</h1>
+          <h1 className="text-center text-9xl" style={{fontFamily: 'Barbara'}}>Maddi&#xE007; & Robb&#xE01E;</h1>
         </div>
       </header>
       <section id="information" className="h-screen bg-blue"></section>

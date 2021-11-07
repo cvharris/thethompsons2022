@@ -1,10 +1,10 @@
-import Link from "./Link";
+import Link from './Link'
 
-export default function NavBar(){
+export default function NavBar() {
   return (
-    <nav>
+    <nav className="absolute z-10 top-0 w-full">
       <ul>
-        <li>
+        <li className="text-white">
           <Link href="#information">Info</Link>
         </li>
       </ul>

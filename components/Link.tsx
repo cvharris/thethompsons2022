@@ -1,7 +1,9 @@
-import NextLink, { LinkProps } from 'next/link';
-import { FC, HTMLProps, useCallback } from 'react';
+import NextLink, {LinkProps} from 'next/link'
+import {FC, HTMLProps, useCallback} from 'react'
 
-interface FLinkProps extends Omit<HTMLProps<HTMLAnchorElement>, 'href' | 'as'>, LinkProps {}
+interface FLinkProps
+  extends Omit<HTMLProps<HTMLAnchorElement>, 'href' | 'as'>,
+    LinkProps {}
 
 const Link: FC<FLinkProps> = ({
   children,
@@ -19,17 +21,17 @@ const Link: FC<FLinkProps> = ({
   const handleClick = useCallback(
     (e) => {
       if ((href as string).startsWith('#')) {
-        e.preventDefault();
-        const destination = document.querySelector(href as string);
+        e.preventDefault()
+        const destination = document.querySelector(href as string)
         if (destination) {
           destination.scrollIntoView({
             behavior: 'smooth',
-          });
+          })
         }
       }
     },
     [href]
-  );
+  )
   return (
     <NextLink
       href={href}
@@ -52,7 +54,7 @@ const Link: FC<FLinkProps> = ({
         {children}
       </a>
     </NextLink>
-  );
-};
+  )
+}
 
-export default Link;
+export default Link

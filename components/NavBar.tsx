@@ -1,6 +1,6 @@
-import Container from './Container'
+import Container from 'components/Container'
 import {Disclosure, Transition} from '@headlessui/react'
-import Link from './Link'
+import Link from 'components/Link'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars, faTimes} from '@fortawesome/pro-regular-svg-icons'
 

@@ -1,6 +1,6 @@
 import {NextPage} from 'next'
-import Layout from '../components/Layout'
-import useCloudinary from '../contexts/CloudinaryContext'
+import Layout from 'components/Layout'
+import useCloudinary from 'contexts/CloudinaryContext'
 import Image from 'next/image'
 
 const Home: NextPage = () => {

@@ -1,6 +1,6 @@
 import type {FC} from 'react'
-import Footer from './Footer'
-import NavBar from './NavBar'
+import Footer from 'components/Footer'
+import NavBar from 'components/NavBar'
 import Head from 'next/head'
 import Script from 'next/script'
 

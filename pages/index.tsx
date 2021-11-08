@@ -24,8 +24,9 @@ const Home: NextPage = () => {
           </h1>
         </div>
       </header>
-      <section id="information" className="h-screen bg-blue"></section>
-      <section id=""></section>
+      <section id="when-and-where" className="h-screen bg-blue"></section>
+      <section id="registry" className="h-screen bg-white"></section>
+      <section id="gallery" className="h-screen bg-blue"></section>
     </Layout>
   )
 }

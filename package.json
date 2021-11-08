@@ -6,11 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
     "@cloudinary/react": "^1.0.0-beta.11",
     "@cloudinary/url-gen": "^1.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/pro-regular-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@headlessui/react": "^1.4.1",
     "gray-matter": "^4.0.3",
     "next": "11.1.2",
     "react": "17.0.2",

@@ -15,9 +15,13 @@ module.exports = {
       gray: '#a7aab2',
       gold: '#afa895',
     },
+    extend: {
+      fontFamily: {
+        bona: ['"Bona Nova"'],
+        barbara: ['"Barbara"'],
+      },
+    },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [],
 }

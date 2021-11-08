@@ -20,11 +20,6 @@ const Layout: FC = ({children}) => {
           href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap"
           rel="stylesheet"
         />
-        <script
-          src="https://kit.fontawesome.com/4abc33c51b.js"
-          crossOrigin="anonymous"
-          async
-        ></script>
       </Head>
       <Script
         src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"

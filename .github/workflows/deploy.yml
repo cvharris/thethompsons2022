@@ -36,7 +36,8 @@ jobs:
             ${{ runner.OS }}-
       - name: Build
         run: |
-          npm ci --legacy-peer-deps
+          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+          npm config set '//npm.fontawesome.com/:_authToken' "${{ secrets.FONTAWESOME_TOKEN }}"
           npm run build
           npm run export
       - name: Deploy

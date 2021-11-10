@@ -10,8 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@cloudinary/react": "^1.0.0-beta.11",
-    "@cloudinary/url-gen": "^1.1.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/pro-regular-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
@@ -23,6 +21,7 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
     "@types/react": "17.0.33",
     "autoprefixer": "^10.3.7",
     "eslint": "7.32.0",

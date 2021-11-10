@@ -9,3 +9,19 @@
 .scrim {
   background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
 }
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  --threshold: 30rem;
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}

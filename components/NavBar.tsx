@@ -16,14 +16,15 @@ export default function NavBar() {
       {({open}) => (
         <>
           <Container>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between text-white">
+              <h1>Thompsons, 2022</h1>
               <div className="desktop-menu flex justify-end">
                 <ul className="hidden sm:flex space-x-4">
                   {sections.map((section) => (
                     <li key={section.ref} className="px-3 py-2">
                       <Link
                         href={`#${section.ref}`}
-                        className="text-white text-sm font-medium"
+                        className="text-sm font-medium"
                       >
                         {section.label}
                       </Link>

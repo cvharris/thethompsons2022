@@ -6,7 +6,8 @@ import {faBars, faTimes} from '@fortawesome/pro-regular-svg-icons'
 
 export default function NavBar() {
   const sections = [
-    {ref: 'when-and-where', label: 'When & Where'},
+    {ref: 'ceremony', label: 'Ceremony'},
+    {ref: 'reception', label: 'Reception'},
     {ref: 'registry', label: 'Registry'},
     {ref: 'gallery', label: 'Gallery'},
   ]
@@ -17,14 +18,14 @@ export default function NavBar() {
         <>
           <Container>
             <div className="flex items-center justify-between text-white">
-              <h1>Thompsons, 2022</h1>
+              <h1 className="text-lg">Thompsons, 2022</h1>
               <div className="desktop-menu flex justify-end">
                 <ul className="hidden sm:flex space-x-4">
                   {sections.map((section) => (
-                    <li key={section.ref} className="px-3 py-2">
+                    <li key={section.ref} className="px-3 py-3">
                       <Link
                         href={`#${section.ref}`}
-                        className="text-sm font-medium"
+                        className="text-base font-medium"
                       >
                         {section.label}
                       </Link>

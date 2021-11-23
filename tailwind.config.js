@@ -24,6 +24,8 @@ module.exports = {
       fontFamily: {
         bona: ['"Bona Nova"'],
         barbara: ['"Barbara"'],
+        vibes: ['"Great Vibes"'],
+        cinzel: ['"Cinzel"'],
       },
     },
   },

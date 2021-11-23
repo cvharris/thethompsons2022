@@ -80,15 +80,34 @@ const Home: NextPage = () => {
           </div>
         </Parallax>
       </section>
-      <section id="registry" className="flex flex-col bg-blueGray-100 pb-32">
+      <section id="accomodations">
+        <div className="py-6 md:py-12 text-center font-bona">
+          <Parallax>
+            <h3 className="font-barbara text-center text-3xl sm:text-6xl py-24 sm:py-32">
+              Accomodations
+            </h3>
+            <a
+              className="inline-block py-4 px-12 text-2xl uppercase font-bold rounded-xl bg-blue-400 text-white cursor-pointer"
+              href="https://www.marriott.com/events/start.mi?id=1636754676799&key=GRP"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book Your Room
+            </a>
+          </Parallax>
+        </div>
+      </section>
+      <section id="registry" className="flex flex-col bg-blueGray-100 pb-48">
         <div className="flex-grow flex flex-col">
-          <h3 className="font-barbara text-center text-4xl sm:text-6xl py-6 sm:py-24">
-            Registry
-          </h3>
-          <div className="container flex-grow flex items-center">
-            <div className="switcher flex-grow">
+          <Parallax>
+            <h3 className="font-barbara text-center text-3xl sm:text-6xl py-24 sm:py-32">
+              Registry
+            </h3>
+          </Parallax>
+          <div className="max-w-prose w-full mx-auto flex-grow flex items-center px-6">
+            <div className="flex flex-col gap-y-16 sm:gap-y-36 flex-grow">
               <a
-                className="store h-12 flex justify-center relative"
+                className="store flex justify-center relative"
                 href="https://www.potterybarn.com/registry/vh2ndwgdzq/registry-list.html"
                 target="_blank"
                 rel="noreferrer"
@@ -96,7 +115,7 @@ const Home: NextPage = () => {
                 <CrateAndBarrelLogo />
               </a>
               <a
-                className="store h-12 flex justify-center relative"
+                className="store flex justify-center relative"
                 href="https://www.crateandbarrel.com/gift-registry/madeleine-harris-and-robert-thompson-ii/r6402740"
                 target="_blank"
                 rel="noreferrer"

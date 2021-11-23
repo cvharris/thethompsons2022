@@ -8,6 +8,7 @@ export default function NavBar() {
   const sections = [
     {ref: 'ceremony', label: 'Ceremony'},
     {ref: 'reception', label: 'Reception'},
+    {ref: 'accomodations', label: 'Accomodations'},
     {ref: 'registry', label: 'Registry'},
     {ref: 'gallery', label: 'Gallery'},
   ]

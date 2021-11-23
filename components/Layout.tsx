@@ -20,6 +20,14 @@ const Layout: FC = ({children}) => {
           href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Script
         src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"

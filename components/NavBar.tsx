@@ -13,12 +13,12 @@ export default function NavBar() {
   ]
 
   return (
-    <Disclosure as="nav" className="absolute z-20 top-0 w-full font-bona">
+    <Disclosure as="nav" className="absolute z-20 top-0 w-full font-cinzel">
       {({open}) => (
         <>
           <Container>
-            <div className="flex items-center justify-between text-white">
-              <h1 className="text-lg">Thompsons, 2022</h1>
+            <div className="flex items-center justify-between text-indigo-900 py-8">
+              <h1 className="text-3xl">Thompsons 2022</h1>
               <div className="desktop-menu flex justify-end">
                 <ul className="hidden sm:flex space-x-4">
                   {sections.map((section) => (

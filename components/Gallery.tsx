@@ -27,7 +27,7 @@ const galleryImgs = [
 const Gallery: FC = () => {
   return (
     <section id="gallery" className="min-h-screen bg-blue pb-24">
-      <h3 className="font-barbara text-center text-4xl sm:text-6xl py-6 sm:py-24">
+      <h3 className="font-cinzel text-center text-4xl sm:text-6xl py-6 sm:py-24 text-indigo-900">
         Gallery
       </h3>
       <div className="reel relative">

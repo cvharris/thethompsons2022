@@ -3,37 +3,48 @@ import Layout from 'components/Layout'
 import Image from 'next/image'
 import CrateAndBarrelLogo from 'public/CrateAndBarrelLogo.svg'
 import PotteryBarnLogo from 'public/PotteryBarnLogo.svg'
+import FloralBorder from 'public/FloralBorder.svg'
 import Gallery from 'components/Gallery'
 import Parallax from 'components/Parallax'
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <header className="min-h-screen flex relative">
-        <div className="header-background relative flex-grow">
-          <Image
-            src="/thethompsons2022/just-engaged.jpg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-          />
+      <header className="min-h-screen flex flex-col items-center relative pt-8">
+        <div className="relative px-24 pt-32">
+          <div className="absolute h-full w-full top-0 left-0 stroke-current text-sky-200">
+            <FloralBorder />
+            <FloralBorder className="transform rotate-180 -translate-y-32" />
+          </div>
+          <div className="header-background relative leading-none">
+            <div className="absolute z-20 scrim h-full w-full top-0 left-0" />
+            <Image
+              src="/thethompsons2022/engagement-portrait-hug.jpg"
+              alt=""
+              height={768}
+              width={576}
+              objectFit="cover"
+              objectPosition="-30px center"
+              className="header-image relative z-10"
+            />
+          </div>
+          <div className="relative transform -translate-y-72 flex items-center justify-center flex-grow">
+            <Parallax offset={200}>
+              <h1 className="header-name-text text-center text-5xl md:text-9xl leading-normal text-sky-300 font-vibes">
+                <span>Maddie</span>
+                <br />
+                <span>&</span>
+                <br />
+                <span>Robby</span>
+              </h1>
+            </Parallax>
+          </div>
+          <h2 className="fixed z-50 right-6 top-12 text-center text-indigo-900 text-lg font-bona flex flex-col p-2 bg-sky-50 bg-opacity-25 m-12">
+            <span>6</span>
+            <span>/</span>
+            <span>18</span>
+          </h2>
         </div>
-        <div className="absolute h-full w-full z-10 scrim flex items-center justify-center">
-          <Parallax>
-            <h1 className="text-center text-5xl md:text-9xl leading-normal text-white font-vibes">
-              <span>Maddie</span>
-              <br />
-              <span>&</span>
-              <br />
-              <span>Robby</span>
-            </h1>
-          </Parallax>
-        </div>
-        <h2 className="fixed z-50 right-6 top-12 text-center text-indigo-900 text-lg font-bona flex flex-col p-2 bg-sky-50 bg-opacity-25 m-12">
-          <span>6</span>
-          <span>/</span>
-          <span>18</span>
-        </h2>
       </header>
       <section
         id="ceremony"

@@ -27,6 +27,9 @@ module.exports = {
         vibes: ['"Great Vibes"'],
         cinzel: ['"Cinzel"'],
       },
+      scale: {
+        '-1': '-1',
+      },
     },
   },
   variants: {},

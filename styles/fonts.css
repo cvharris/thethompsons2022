@@ -6,8 +6,12 @@
   font-display: swap;
 }
 
+.header-background {
+  clip-path: ellipse(40% 50% at 50% 50%);
+}
+
 .scrim {
-  background-image: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+  background-image: linear-gradient(0deg, #00000088, #ffffff44 50%, transparent 100%);
 }
 
 .container {

@@ -11,6 +11,7 @@ type ParallaxProps = {
   offset?: number
   clampInitial?: boolean
   clampFinal?: boolean
+  className?: string
 }
 
 const Parallax: FC<ParallaxProps> = ({
@@ -18,6 +19,7 @@ const Parallax: FC<ParallaxProps> = ({
   offset = 50,
   clampInitial,
   clampFinal,
+  className,
 }) => {
   const prefersReducedMotion = useReducedMotion()
   const [elementTop, setElementTop] = useState(0)
@@ -58,7 +60,11 @@ const Parallax: FC<ParallaxProps> = ({
   }
 
   return (
-    <motion.div ref={ref} style={{transform: 'translateZ(0)', y}}>
+    <motion.div
+      ref={ref}
+      className={className}
+      style={{transform: 'translateZ(0)', y}}
+    >
       {children}
     </motion.div>
   )

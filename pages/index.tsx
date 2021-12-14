@@ -10,34 +10,46 @@ import Parallax from 'components/Parallax'
 const Home: NextPage = () => {
   return (
     <Layout>
-      <header className="min-h-screen flex flex-col items-center relative pt-8">
+      <header className="min-h-screen flex flex-col items-center relative pt-20">
         <div className="relative px-24 pt-32">
-          <div className="absolute h-full w-full top-0 left-0 stroke-current text-sky-200">
-            <FloralBorder />
-            <FloralBorder className="transform rotate-180 -translate-y-32" />
-          </div>
-          <div className="header-background relative leading-none">
-            <div className="absolute z-20 scrim h-full w-full top-0 left-0" />
-            <Image
-              src="/thethompsons2022/engagement-portrait-hug.jpg"
-              alt=""
-              height={768}
-              width={576}
-              objectFit="cover"
-              objectPosition="-30px center"
-              className="header-image relative z-10"
-            />
-          </div>
-          <div className="relative transform -translate-y-72 flex items-center justify-center flex-grow">
-            <Parallax offset={200}>
-              <h1 className="header-name-text text-center text-5xl md:text-9xl leading-normal text-sky-300 font-vibes">
-                <span>Maddie</span>
-                <br />
-                <span>&</span>
-                <br />
-                <span>Robby</span>
-              </h1>
+          <div className="absolute z-10 h-full w-full top-0 left-0 stroke-current text-sky-200">
+            <Parallax>
+              <FloralBorder />
+              <FloralBorder className="transform rotate-180 -translate-y-32" />
             </Parallax>
+          </div>
+          <Parallax offset={75} className="relative z-20">
+            <div className="header-background  leading-none">
+              <div className="absolute z-20 scrim h-full w-full top-0 left-0" />
+              <Image
+                src="/thethompsons2022/engagement-portrait-hug.jpg"
+                alt=""
+                height={768}
+                width={576}
+                objectFit="cover"
+                objectPosition="-30px center"
+                className="header-image relative z-10"
+              />
+            </div>
+          </Parallax>
+          <div className="absolute z-40 bottom-0 left-0 w-full transform -translate-x-4 -translate-y-48 flex items-center justify-center flex-grow">
+            <div className="relative z-20">
+              <Parallax className="relative z-10" offset={100}>
+                <h1 className="header-name-text text-center text-5xl md:text-9xl leading-snug font-vibes text-white">
+                  <span>Maddie</span>
+                  <br />
+                  <span>Robby</span>
+                </h1>
+              </Parallax>
+              <div
+                className="absolute z-0 top-0 h-full w-full flex justify-center items-center text-sky-300 text-opacity-70 font-vibes pt-20"
+                style={{fontSize: 360}}
+              >
+                <Parallax offset={200}>
+                  <span>&</span>
+                </Parallax>
+              </div>
+            </div>
           </div>
           <h2 className="fixed z-50 right-6 top-12 text-center text-indigo-900 text-lg font-bona flex flex-col p-2 bg-sky-50 bg-opacity-25 m-12">
             <span>6</span>

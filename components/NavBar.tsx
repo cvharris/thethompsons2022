@@ -18,8 +18,8 @@ export default function NavBar() {
       {({open}) => (
         <>
           <Container>
-            <div className="flex items-center justify-between text-indigo-900 py-8">
-              <h1 className="text-3xl">Thompsons 2022</h1>
+            <div className="flex items-center justify-around text-indigo-900 py-8">
+              <h1 className="text-3xl">The Thompsons 2022</h1>
               <div className="desktop-menu flex justify-end">
                 <ul className="hidden sm:flex space-x-4">
                   {sections.map((section) => (

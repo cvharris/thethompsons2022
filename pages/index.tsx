@@ -62,16 +62,19 @@ const Home: NextPage = () => {
         id="ceremony"
         className="py-6 md:py-12 bg-sky-200 text-center font-cinzel"
       >
+        {/* <div>
+          
+          
+        </div> */}
         <div className="relative">
+          <img src="/OurLadyOfThePillarLogo.png" alt="" />
           <h3 className="font-cinzel text-center text-4xl sm:text-6xl py-6 sm:py-24 text-indigo-900">
             Ceremony
           </h3>
-          {/* <h3 className="font-cinzel">Ceremony</h3> */}
-          <h5 className="absolute w-full h-full font-sans font-extrabold text-4xl">
+          {/* <h5 className="absolute w-full h-full font-sans font-extrabold text-4xl">
             2
-          </h5>
+          </h5> */}
           <Parallax>
-            {/* <h3 className="text-xl">Nuptial Mass</h3> */}
             <h4 className="font-vibes text-6xl tracking-widest py-4">
               Our Lady of the Pillar
             </h4>
@@ -90,14 +93,14 @@ const Home: NextPage = () => {
         id="reception"
         className="relative bg-sky-200 py-6 md:py-12 text-center font-cinzel"
       >
+        <img src="/RCLogo3.png" alt="" />
         <h3 className="font-cinzel text-center text-4xl sm:text-6xl py-6 sm:py-24 text-indigo-900">
           Reception
         </h3>
-        <h5 className="absolute w-full h-full font-sans font-extrabold text-4xl">
+        {/* <h5 className="absolute w-full h-full font-sans font-extrabold text-4xl">
           5
-        </h5>
+        </h5> */}
         <Parallax>
-          {/* <h3 className="text-xl">Wedding Reception</h3> */}
           <h4 className="font-vibes text-6xl tracking-widest py-4">
             The Solarium @ the Ritz-Carlton
           </h4>
@@ -111,13 +114,13 @@ const Home: NextPage = () => {
         </Parallax>
       </section>
       <section id="accomodations">
-        <div className="py-6 md:py-12 text-center font-bona">
+        <div className="py-6 md:py-12 text-center font-cinzel text-indigo-900">
           <Parallax>
-            <h3 className="font-barbara text-center text-3xl sm:text-6xl py-24 sm:py-32">
+            <h3 className="text-center text-3xl sm:text-6xl py-24 sm:py-32">
               Accomodations
             </h3>
             <a
-              className="inline-block py-4 px-12 text-2xl uppercase font-bold rounded-xl bg-blue-400 text-white cursor-pointer"
+              className="inline-block py-4 px-12 text-2xl uppercase font-bold rounded-xl bg-indigo-400 text-white cursor-pointer"
               href="https://www.marriott.com/events/start.mi?id=1636754676799&key=GRP"
               target="_blank"
               rel="noreferrer"
@@ -138,7 +141,7 @@ const Home: NextPage = () => {
             <div className="flex flex-col gap-y-16 sm:gap-y-36 flex-grow">
               <a
                 className="store flex justify-center relative"
-                href="https://www.potterybarn.com/registry/vh2ndwgdzq/registry-list.html"
+                href="https://www.crateandbarrel.com/gift-registry/madeleine-harris-and-robert-thompson-ii/r6402740"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -146,7 +149,7 @@ const Home: NextPage = () => {
               </a>
               <a
                 className="store flex justify-center relative"
-                href="https://www.crateandbarrel.com/gift-registry/madeleine-harris-and-robert-thompson-ii/r6402740"
+                href="https://www.potterybarn.com/registry/vh2ndwgdzq/registry-list.html"
                 target="_blank"
                 rel="noreferrer"
               >

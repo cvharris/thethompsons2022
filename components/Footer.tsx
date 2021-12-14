@@ -3,13 +3,13 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
   return (
-    <footer className="bg-warmGray-800 py-12">
-      <div className="text-center text-white text-base">
+    <footer className="bg-blueGray-100 py-12">
+      <div className="text-center text-indigo-900 text-base">
         <span>Made with </span>
-        <FontAwesomeIcon icon={faHeart} className="text-red-600 text-xl" />
+        <FontAwesomeIcon icon={faHeart} className="text-rose-600 text-xl" />
         <span> by her brother </span>
         <a
-          className="text-sky-500"
+          className="text-indigo-400"
           href="https://github.com/cvharris"
           target="_blank"
           rel="noreferrer"
@@ -18,7 +18,7 @@ export default function Footer() {
         </a>
         <span> & sister-in-law </span>
         <a
-          className="text-sky-500"
+          className="text-indigo-400"
           href="https://github.com/njosieb"
           target="_blank"
           rel="noreferrer"

@@ -6,12 +6,48 @@
   font-display: swap;
 }
 
+:root {
+  --shadow-color: 0deg 0% 63%;
+  --shadow-right:
+     0.7px 0.7px 1px hsl(var(--shadow-color) / 0.56),
+    2.2px 2.1px 3.1px -1px hsl(var(--shadow-color) / 0.5),
+    6.1px 5.9px 8.7px -2.1px hsl(var(--shadow-color) / 0.44),
+    15.8px 15.2px 22.5px -3.1px hsl(var(--shadow-color) / 0.39);
+  --shadow-left:
+    -0.4px 0.7px 0.8px hsl(var(--shadow-color) / 0.56),
+    -1.3px 2.1px 2.5px -1px hsl(var(--shadow-color) / 0.5),
+    -3.6px 5.8px 7px -2.1px hsl(var(--shadow-color) / 0.44),
+    -9.4px 14.9px 18.1px -3.1px hsl(var(--shadow-color) / 0.39);
+}
+
 .header-background {
   clip-path: ellipse(40% 50% at 50% 50%);
 }
 
 .scrim {
   background-image: linear-gradient(0deg, #00000088, #ffffff44 50%, transparent 100%);
+}
+
+.min-h-screen-75 {
+  min-height: 75vh;
+}
+
+.header-name-ampersand {
+  font-size: 8rem;
+}
+
+@media (min-width: 768px) {
+  .header-name-ampersand {
+    font-size: 20rem;
+  }
+}
+
+.card-left {
+  box-shadow: var(--shadow-left);
+}
+
+.card-right {
+  box-shadow: var(--shadow-right);
 }
 
 .container {

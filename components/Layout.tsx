@@ -6,7 +6,7 @@ import Script from 'next/script'
 
 const Layout: FC = ({children}) => {
   return (
-    <div className="flex flex-col min-h-screen relative">
+    <div className="flex flex-col min-h-screen relative max-w-full overflow-hidden">
       <Head>
         <title>Thompsons Wedding 2022</title>
         <meta name="description" content="Thompson wedding website 2022" />
@@ -18,6 +18,14 @@ const Layout: FC = ({children}) => {
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
           rel="stylesheet"
         />
       </Head>

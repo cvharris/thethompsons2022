@@ -14,19 +14,19 @@ export default function NavBar() {
   ]
 
   return (
-    <Disclosure as="nav" className="absolute z-20 top-0 w-full font-cinzel">
+    <Disclosure as="nav" className="absolute z-50 top-0 w-full font-cinzel">
       {({open}) => (
         <>
           <Container>
             <div className="flex items-center justify-around text-indigo-900 py-8">
-              <h1 className="text-3xl">The Thompsons 2022</h1>
+              <h1 className="text-xl md:text-3xl">The Thompsons 2022</h1>
               <div className="desktop-menu flex justify-end">
                 <ul className="hidden sm:flex space-x-4">
                   {sections.map((section) => (
-                    <li key={section.ref} className="px-3 py-3">
+                    <li key={section.ref} className="">
                       <Link
                         href={`#${section.ref}`}
-                        className="text-base font-medium"
+                        className="text-base font-medium transition-colors hover:bg-indigo-100 bg-opacity-80 duration-700 px-3 py-2 rounded-xl"
                       >
                         {section.label}
                       </Link>
@@ -35,7 +35,7 @@ export default function NavBar() {
                 </ul>
               </div>
               <div className="mobile-menu-button -mr-2 flex sm:hidden">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 text-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <FontAwesomeIcon
@@ -69,7 +69,7 @@ export default function NavBar() {
                   <Link
                     key={section.ref}
                     href={`#${section.ref}`}
-                    className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    className="bg-indigo-400 text-white text-center block px-3 py-2 rounded-md text-base font-medium"
                   >
                     <Disclosure.Button>{section.label}</Disclosure.Button>
                   </Link>

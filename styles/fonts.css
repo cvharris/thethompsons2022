@@ -36,6 +36,14 @@
   font-size: 8rem;
 }
 
+.store {
+  @apply transform scale-100 transition-transform duration-300;
+}
+
+.store:hover {
+  @apply scale-110 duration-700;
+}
+
 @media (min-width: 768px) {
   .header-name-ampersand {
     font-size: 20rem;

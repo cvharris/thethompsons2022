@@ -79,7 +79,7 @@ const Home: NextPage = () => {
               <h4 className="font-vibes text-2xl md:text-6xl leading-normal tracking-widest py-4">
                 Our Lady of the Pillar
               </h4>
-              <h5 className="text-xl pb-4">2 o'clock in the afternoon</h5>
+              <h5 className="text-xl pb-4">2 o&apos;clock in the afternoon</h5>
               <div className="text-2xl">
                 <address>
                   <span>403 S Lindbergh Blvd</span>
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
               <h4 className="font-vibes text-2xl md:text-6xl tracking-widest py-4">
                 The Solarium @ the Ritz-Carlton
               </h4>
-              <h5 className="text-xl pb-4">5 o'clock in the evening</h5>
+              <h5 className="text-xl pb-4">5 o&apos;clock in the evening</h5>
               <div className="text-2xl">
                 <address>
                   <span>100 Carondelet Plaza</span>

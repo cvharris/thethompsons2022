@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="text-center text-indigo-900 text-base px-6">
         <span>Made with </span>
         <FontAwesomeIcon icon={faHeart} className="text-rose-600 text-xl" />
-        <span> by the bride's brother </span>
+        <span> by the bride&apos;s brother </span>
         <a
           className="text-indigo-400"
           href="https://github.com/cvharris"

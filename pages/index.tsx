@@ -1,10 +1,10 @@
 import {NextPage} from 'next'
 import Layout from 'components/Layout'
 import Image from 'next/image'
-import CrateAndBarrelLogo from 'public/CrateAndBarrelLogo.svg'
-import PotteryBarnLogo from 'public/PotteryBarnLogo.svg'
-import FloralBorder from 'public/FloralBorder.svg'
-import ZolaLogo from 'public/zola.svg'
+import CrateAndBarrelLogo from 'components/svgs/CrateAndBarrelLogo.svg'
+import PotteryBarnLogo from 'components/svgs/PotteryBarnLogo.svg'
+import FloralBorder from 'components/svgs/FloralBorder.svg'
+import ZolaLogo from 'components/svgs/zola.svg'
 import Gallery from 'components/Gallery'
 import Parallax from 'components/Parallax'
 
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
               <div className="absolute z-20 w-full h-full top-0 left-0 bg-white bg-opacity-75" />
               <img
                 className="relative z-10"
-                src="/OurLadyOfThePillarLogo.png"
+                src="https://res.cloudinary.com/dy6xelvys/image/upload/thethompsons2022/OurLadyOfThePillarLogo.png"
                 alt=""
               />
             </Parallax>
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
               <div className="absolute z-20 w-full h-full top-0 left-0 bg-white bg-opacity-75" />
               <img
                 className="relative z-10"
-                src="/RitzCarltonLogo.png"
+                src="https://res.cloudinary.com/dy6xelvys/image/upload/thethompsons2022/RitzCarltonLogo.png"
                 alt=""
               />
             </Parallax>

@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div className="relative px-12 md:px-24 pt-16 md:pt-32">
           <div className="absolute z-10 h-full w-full top-0 left-0 px-4 md:px-0 stroke-current text-sky-200">
             <Parallax>
-              <FloralBorder />
+              <FloralBorder className="transform translate-y-3 md:translate-y-0" />
               <FloralBorder className="transform rotate-180 md:-translate-y-32" />
             </Parallax>
           </div>
@@ -23,12 +23,11 @@ const Home: NextPage = () => {
             <div className="header-background leading-none">
               <div className="absolute z-20 scrim h-full w-full top-0 left-0" />
               <Image
-                src="/thethompsons2022/engagement-portrait-hug.jpg"
+                src="/thethompsons2022/champagne_portrait.jpg"
                 alt=""
                 height={768}
                 width={576}
                 objectFit="cover"
-                objectPosition="-25px center"
                 className="header-image relative z-10"
               />
             </div>
@@ -137,14 +136,24 @@ const Home: NextPage = () => {
           <h3 className="text-center text-3xl sm:text-6xl pb-24 sm:pb-32">
             Accomodations
           </h3>
-          <a
-            className="inline-block py-4 px-12 text-2xl uppercase font-bold rounded-xl bg-indigo-400 text-white cursor-pointer hover:bg-indigo-600 transition-colors duration-700"
-            href="https://www.marriott.com/events/start.mi?id=1636754676799&key=GRP"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Book Your Room
-          </a>
+          <div className="flex gap-4 justify-center">
+            <a
+              className="inline-block py-4 px-12 text-2xl uppercase font-bold rounded-xl bg-indigo-400 text-white cursor-pointer hover:bg-indigo-600 transition-colors duration-700"
+              href="https://www.marriott.com/events/start.mi?id=1636754676799&key=GRP"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Carondelet
+            </a>
+            <a
+              className="inline-block py-4 px-12 text-2xl uppercase font-bold rounded-xl bg-indigo-400 text-white cursor-pointer hover:bg-indigo-600 transition-colors duration-700"
+              href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1645716685712&key=GRP&app=resvlink"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Le Meridian
+            </a>
+          </div>
         </div>
       </section>
       <section id="registry" className="flex flex-col bg-blueGray-100 pb-48">
@@ -155,7 +164,7 @@ const Home: NextPage = () => {
           <div className="max-w-prose w-full mx-auto flex-grow flex items-center px-6">
             <div className="flex flex-col gap-y-16 sm:gap-y-36 flex-grow">
               <a
-                className="store flex justify-center relative"
+                className="store"
                 href="https://www.crateandbarrel.com/gift-registry/madeleine-harris-and-robert-thompson-ii/r6402740"
                 target="_blank"
                 rel="noreferrer"
@@ -163,7 +172,7 @@ const Home: NextPage = () => {
                 <CrateAndBarrelLogo />
               </a>
               <a
-                className="store flex justify-center relative"
+                className="store"
                 href="https://www.potterybarn.com/registry/vh2ndwgdzq/registry-list.html"
                 target="_blank"
                 rel="noreferrer"
@@ -171,7 +180,7 @@ const Home: NextPage = () => {
                 <PotteryBarnLogo />
               </a>
               <a
-                className="store flex justify-center relative"
+                className="store"
                 href="https://www.zola.com/registry/maddieandrobby2022"
                 target="_blank"
                 rel="noreferrer"

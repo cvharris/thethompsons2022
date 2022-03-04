@@ -33,6 +33,7 @@ const Layout: FC = ({children}) => {
         src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"
         strategy="beforeInteractive"
       />
+      <Script src="https://cdn.splitbee.io/sb.js" />
       <NavBar />
       <div className="flex-grow">{children}</div>
       <Footer />

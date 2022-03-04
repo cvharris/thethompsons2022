@@ -2,6 +2,7 @@
   "name": "thethompsons2022",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thethompsons2022.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
